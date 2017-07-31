@@ -11,8 +11,8 @@
 
 
 <p align="center">
-    <a href="http://i.imgur.com/ECtCAYk.gifv">
-        <img src="http://i.imgur.com/ECtCAYk.gifv" height="450">
+    <a href="http://i.imgur.com/ECtCAYk.gif">
+        <img src="http://i.imgur.com/ECtCAYk.gif" height="450">
     </a>
 </p>
 
