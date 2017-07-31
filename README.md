@@ -1,4 +1,4 @@
-# AZTableView
+# AZTableView Controller
 
 
 ![Alt text](http://i.imgur.com/qUV86bJ.png "AZ-TableViewImage")
