@@ -1,4 +1,4 @@
-# FAParser
+# AZTableView
 
 
 ![Alt text](http://i.imgur.com/qUV86bJ.png "AZ-TableViewImage")
@@ -8,6 +8,13 @@
 [![Version](https://img.shields.io/cocoapods/v/FAParser.svg?style=flat)](http://cocoapods.org/pods/FAParser)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat.svg)](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat.svg)
 [![Platform](https://img.shields.io/cocoapods/p/FAParser.svg?style=flat)](http://cocoapods.org/pods/FAParser)
+
+
+<p align="center">
+    <a href="http://i.imgur.com/ECtCAYk.gifv">
+        <img src="http://i.imgur.com/ECtCAYk.gifv" height="450">
+    </a>
+</p>
 
 
 
@@ -45,13 +52,6 @@ Then, run the following command:
 ```bash
 $ pod install
 ```
-
-
-
-## Pre-Requisite
-
-* Key Value Coding
-* To learn about key-value-coding, please visit Apple's official KVC [documentation](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/KeyValueCoding/) 
 
 ## Usage
 

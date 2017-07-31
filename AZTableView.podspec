@@ -14,28 +14,13 @@ Pod::Spec.new do |s|
   s.license      = "MIT"
 
 
-  s.author             = { "" => "" }
+  s.author             = { "AfrozZ" => "" }
 
-  s.source       = { :git => "git@bitbucket.org:yinzcamsmartfile/ticketek_ios.git" }
+  s.source       = { :git => "https://github.com/AfrozZaheer/AZTableView.git" }
 
 
 
  
-  s.source_files = 'Pod/**/*.{m,h,swift,xcassets}'
-  s.resource_bundles = {
-     'TicketEkElements' => ['Pod/**/*.{storyboard,xib,xcassets}']
-  }
-
-
-  s.resources    = 'Pod/StoryBoards/Ticketek.storyboard'
-
-  s.dependency  "Alamofire"
-  #s.dependency  "PageMenu"
-  s.dependency  "JTTableViewController"
-  s.dependency  "JTProgressHUD"
-  s.dependency  "MTBBarcodeScanner"
-  #s.dependency  "FAParser"
-  s.dependency  "Shimmer"
-  s.dependency  "SDCAlertView"
+  s.source_files = 'Classes/**/*.{swift}'
 
 end
