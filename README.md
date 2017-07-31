@@ -86,7 +86,7 @@ class ViewController: AZTableViewController {
 
 * Set the next page loder cell outlet as given below,
 
-![Alt text](http://imgur.com/HU83xKW "AZTableView-step2")
+![Alt text](http://i.imgur.com/HU83xKW.png "AZTableView-step2")
 
 #### Step 3 
 
