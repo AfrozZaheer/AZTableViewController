@@ -33,11 +33,33 @@ class AZTableViewController: UIViewController {
         
         refresh.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         tableView?.addSubview(refresh)
+        
+        loadDefaultsViews()
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
+    
+    func loadDefaultsViews(bundle: Bundle? = Utility.getBundle())  {
+        
+        if nextPageLoaderCell == nil {
+            let loaderCell = UINib(nibName: "LoadingTableViewCell", bundle: bundle)
+            tableView?.register(loaderCell, forCellReuseIdentifier: "LoadingTableViewCell")
+            nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: "LoadingTableViewCell")
+        }
+        
+        if loadingView == nil {
+            loadingView = bundle?.loadNibNamed("LoadingView", owner: self, options: nil)?.first as? UIView
+        }
+        if noResults == nil {
+            noResults = bundle?.loadNibNamed("ErrorView", owner: self, options: nil)?.first as? UIView
+        }
+        if errorView == nil {
+            errorView = bundle?.loadNibNamed("NoResultView", owner: self, options: nil)?.first as? UIView
+        }
+    }
+    
 }
 
 //MARK: - UITableViewDelegate, UITableViewDataSource

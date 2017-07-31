@@ -10,6 +10,12 @@
 		2093EFF21F2F128C00833030 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2093EFF11F2F128C00833030 /* README.md */; };
 		2093EFF41F2F2C6400833030 /* AZTableView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2093EFF31F2F2C6400833030 /* AZTableView.podspec */; };
 		2093EFF61F2F44CF00833030 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 2093EFF51F2F44CF00833030 /* LICENSE */; };
+		2093F01C1F2F648F00833030 /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2093F01B1F2F648F00833030 /* LoadingView.xib */; };
+		2093F01E1F2F649C00833030 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2093F01D1F2F649C00833030 /* ErrorView.xib */; };
+		2093F0201F2F64AD00833030 /* NoResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2093F01F1F2F64AD00833030 /* NoResultView.xib */; };
+		2093F0231F2F64F600833030 /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093F0211F2F64F600833030 /* LoadingTableViewCell.swift */; };
+		2093F0241F2F64F600833030 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2093F0221F2F64F600833030 /* LoadingTableViewCell.xib */; };
+		2093F0271F2F6D7600833030 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2093F0261F2F6D7600833030 /* Utility.swift */; };
 		20BC86901F2B28D70084B8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC868F1F2B28D70084B8FF /* AppDelegate.swift */; };
 		20BC86951F2B28D70084B8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BC86931F2B28D70084B8FF /* Main.storyboard */; };
 		20BC86971F2B28D70084B8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BC86961F2B28D70084B8FF /* Assets.xcassets */; };
@@ -23,6 +29,12 @@
 		2093EFF11F2F128C00833030 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2093EFF31F2F2C6400833030 /* AZTableView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AZTableView.podspec; sourceTree = "<group>"; };
 		2093EFF51F2F44CF00833030 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		2093F01B1F2F648F00833030 /* LoadingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingView.xib; path = "Loading&ErrorViews/LoadingView.xib"; sourceTree = "<group>"; };
+		2093F01D1F2F649C00833030 /* ErrorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = ErrorView.xib; path = "Loading&ErrorViews/ErrorView.xib"; sourceTree = "<group>"; };
+		2093F01F1F2F64AD00833030 /* NoResultView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoResultView.xib; path = "Loading&ErrorViews/NoResultView.xib"; sourceTree = "<group>"; };
+		2093F0211F2F64F600833030 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LoadingTableViewCell.swift; path = "Loading&ErrorViews/LoadingTableViewCell.swift"; sourceTree = "<group>"; };
+		2093F0221F2F64F600833030 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = LoadingTableViewCell.xib; path = "Loading&ErrorViews/LoadingTableViewCell.xib"; sourceTree = "<group>"; };
+		2093F0261F2F6D7600833030 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 		20BC868C1F2B28D70084B8FF /* AZ-TableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AZ-TableViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BC868F1F2B28D70084B8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BC86941F2B28D70084B8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +57,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2093F0151F2F600B00833030 /* LoadingXibs */ = {
+			isa = PBXGroup;
+			children = (
+				2093F01B1F2F648F00833030 /* LoadingView.xib */,
+				2093F01D1F2F649C00833030 /* ErrorView.xib */,
+				2093F01F1F2F64AD00833030 /* NoResultView.xib */,
+				2093F0211F2F64F600833030 /* LoadingTableViewCell.swift */,
+				2093F0221F2F64F600833030 /* LoadingTableViewCell.xib */,
+			);
+			name = LoadingXibs;
+			sourceTree = "<group>";
+		};
 		20BC86831F2B28D70084B8FF = {
 			isa = PBXGroup;
 			children = (
@@ -82,7 +106,9 @@
 		20BC86A31F2B2A0A0084B8FF /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				2093F0151F2F600B00833030 /* LoadingXibs */,
 				20BC86A41F2B2A0A0084B8FF /* AZTableViewController.swift */,
+				2093F0261F2F6D7600833030 /* Utility.swift */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -147,9 +173,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2093F0201F2F64AD00833030 /* NoResultView.xib in Resources */,
 				20BC869A1F2B28D70084B8FF /* LaunchScreen.storyboard in Resources */,
 				2093EFF41F2F2C6400833030 /* AZTableView.podspec in Resources */,
+				2093F0241F2F64F600833030 /* LoadingTableViewCell.xib in Resources */,
 				20BC86971F2B28D70084B8FF /* Assets.xcassets in Resources */,
+				2093F01C1F2F648F00833030 /* LoadingView.xib in Resources */,
+				2093F01E1F2F649C00833030 /* ErrorView.xib in Resources */,
 				20BC86951F2B28D70084B8FF /* Main.storyboard in Resources */,
 				2093EFF61F2F44CF00833030 /* LICENSE in Resources */,
 			);
@@ -162,8 +192,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2093F0271F2F6D7600833030 /* Utility.swift in Sources */,
 				20BC86A81F2B2A210084B8FF /* FakeService.swift in Sources */,
 				20BC86901F2B28D70084B8FF /* AppDelegate.swift in Sources */,
+				2093F0231F2F64F600833030 /* LoadingTableViewCell.swift in Sources */,
 				2093EFF21F2F128C00833030 /* README.md in Sources */,
 				20BC86A91F2B2A210084B8FF /* ViewController.swift in Sources */,
 				20BC86A51F2B2A0A0084B8FF /* AZTableViewController.swift in Sources */,

@@ -21,7 +21,9 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/AfrozZaheer/AZTableView.git" }
 
-
+  s.resource_bundles = {
+     'AZTableViewElements' => ['AZ-TableViewController/Classes/**/*.{xib}']
+  }
 
  
   s.source_files = 'AZ-TableViewController/Classes/**/*.{swift}'
