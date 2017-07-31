@@ -71,7 +71,7 @@ extension ViewController {
             if let resu = results {
                 
                 self.results.append(contentsOf: resu)
-                if self.results.count < 45 { // you probably get next page exist from service.
+                if self.results.count < 50 { // you probably get next page exist from service.
                     self.didfetchData(resultCount: resu.count, haveMoreData: true)
                 }
                 else {

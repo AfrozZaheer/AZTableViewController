@@ -15,7 +15,7 @@ class FakeService {
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             let fakeData = self.fakeData()
             
-            var pageSize = 15
+            var pageSize = 10
             
             if((offset + pageSize) >= fakeData.count) {
                 pageSize = fakeData.count - offset
