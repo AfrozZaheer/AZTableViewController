@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
 
 
  
-  s.source_files = 'AZ-TableViewController/Classes/**/*.{swift}'
+  s.source_files = 'Classes/**/*.{swift}'
 
 end
