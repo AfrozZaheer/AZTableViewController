@@ -106,6 +106,10 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
         }
         return UITableViewCell()
     }
+    
+    override func AZtableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return results.count
+    }
 }
 
 
@@ -115,21 +119,22 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
 * Override two more functions of fetchData and fetchNextData functions  
 
 ```swift 
-
+//MARK: - API Call
 extension ViewController {
     
     override func fetchData() {
         super.fetchData()
         
         FakeService.getData { (error, results) in
-            if let error = error {
-                self.errorDidOccured(error: error)
-            }
-            else if let resu = results {
+           
+            if let resu = results {
                 self.results.removeAll()
-
-                self.didfetchData(resultCount: resu.count, haveMoreData: true)
                 self.results.append(contentsOf: resu)
+                self.didfetchData(resultCount: resu.count, haveMoreData: true)
+            }
+                
+            else if let error = error {
+                self.errorDidOccured(error: error)
             }
         }
     }
@@ -138,17 +143,19 @@ extension ViewController {
         super.fetchNextData()
         
         FakeService.getData (offset: results.count) { (error, results) in
-            if let error = error {
-                self.errorDidOccured(error: error)
-            }
-            else if let resu = results {
-                if self.results.count < 45 { // you probably get next page exist from service. 
+            
+            if let resu = results {
+                
+                self.results.append(contentsOf: resu)
+                if self.results.count < 45 { // you probably get next page exist from service.
                     self.didfetchData(resultCount: resu.count, haveMoreData: true)
                 }
                 else {
                     self.didfetchData(resultCount: resu.count, haveMoreData: false)
                 }
-                self.results.append(contentsOf: resu)
+            }
+            else if let error = error {
+                self.errorDidOccured(error: error)
             }
         }
     }

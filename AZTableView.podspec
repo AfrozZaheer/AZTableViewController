@@ -4,17 +4,20 @@ Pod::Spec.new do |s|
 
   s.name         = "AZTableView"
   s.version      = "0.0.1"
-  s.summary      = "TicketEk to purchase tickets"
+  s.summary      = "Automatic pagination handling and loading views"
 
-  s.description  = "Ticketek to purchase events tickets in one place just integrate it with you app and you are good to go."
+  s.description  = <<-DESC
+        Automatic pagination handling
+        No more awkward empty TableView
+    DESC
 
-  s.homepage     = "http://www.google.com"
+  s.homepage     = "https://github.com/AfrozZaheer/AZTableView"
 
   s.platform         = :ios, "8.0"
-  s.license      = "MIT"
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
 
-  s.author             = { "AfrozZ" => "" }
+  s.author       = { "AfrozZ" => "afrozezaheer@gmail.com" }
 
   s.source       = { :git => "https://github.com/AfrozZaheer/AZTableView.git" }
 
