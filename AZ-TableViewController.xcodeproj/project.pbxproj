@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2093EFF21F2F128C00833030 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2093EFF11F2F128C00833030 /* README.md */; };
+		2093EFF41F2F2C6400833030 /* AZTableView.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 2093EFF31F2F2C6400833030 /* AZTableView.podspec */; };
 		20BC86901F2B28D70084B8FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BC868F1F2B28D70084B8FF /* AppDelegate.swift */; };
 		20BC86951F2B28D70084B8FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20BC86931F2B28D70084B8FF /* Main.storyboard */; };
 		20BC86971F2B28D70084B8FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20BC86961F2B28D70084B8FF /* Assets.xcassets */; };
@@ -17,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2093EFF11F2F128C00833030 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2093EFF31F2F2C6400833030 /* AZTableView.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AZTableView.podspec; sourceTree = "<group>"; };
 		20BC868C1F2B28D70084B8FF /* AZ-TableViewController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AZ-TableViewController.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		20BC868F1F2B28D70084B8FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		20BC86941F2B28D70084B8FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -42,6 +46,8 @@
 		20BC86831F2B28D70084B8FF = {
 			isa = PBXGroup;
 			children = (
+				2093EFF31F2F2C6400833030 /* AZTableView.podspec */,
+				2093EFF11F2F128C00833030 /* README.md */,
 				20BC868E1F2B28D70084B8FF /* AZ-TableViewController */,
 				20BC868D1F2B28D70084B8FF /* Products */,
 			);
@@ -58,11 +64,11 @@
 		20BC868E1F2B28D70084B8FF /* AZ-TableViewController */ = {
 			isa = PBXGroup;
 			children = (
-				20BC86A61F2B2A210084B8FF /* FakeService.swift */,
-				20BC86A71F2B2A210084B8FF /* ViewController.swift */,
-				20BC86A31F2B2A0A0084B8FF /* Classes */,
 				20BC868F1F2B28D70084B8FF /* AppDelegate.swift */,
+				20BC86A71F2B2A210084B8FF /* ViewController.swift */,
+				20BC86A61F2B2A210084B8FF /* FakeService.swift */,
 				20BC86931F2B28D70084B8FF /* Main.storyboard */,
+				20BC86A31F2B2A0A0084B8FF /* Classes */,
 				20BC86961F2B28D70084B8FF /* Assets.xcassets */,
 				20BC86981F2B28D70084B8FF /* LaunchScreen.storyboard */,
 				20BC869B1F2B28D70084B8FF /* Info.plist */,
@@ -139,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				20BC869A1F2B28D70084B8FF /* LaunchScreen.storyboard in Resources */,
+				2093EFF41F2F2C6400833030 /* AZTableView.podspec in Resources */,
 				20BC86971F2B28D70084B8FF /* Assets.xcassets in Resources */,
 				20BC86951F2B28D70084B8FF /* Main.storyboard in Resources */,
 			);
@@ -153,6 +160,7 @@
 			files = (
 				20BC86A81F2B2A210084B8FF /* FakeService.swift in Sources */,
 				20BC86901F2B28D70084B8FF /* AppDelegate.swift in Sources */,
+				2093EFF21F2F128C00833030 /* README.md in Sources */,
 				20BC86A91F2B2A210084B8FF /* ViewController.swift in Sources */,
 				20BC86A51F2B2A0A0084B8FF /* AZTableViewController.swift in Sources */,
 			);
@@ -318,6 +326,7 @@
 				20BC86A01F2B28D70084B8FF /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

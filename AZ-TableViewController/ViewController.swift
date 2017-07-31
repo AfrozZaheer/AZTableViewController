@@ -23,10 +23,7 @@ class ViewController: AZTableViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
-
 }
 
 extension ViewController : UITableViewDataSource, UITableViewDelegate {
@@ -47,13 +44,13 @@ extension ViewController {
     override func fetchData() {
         super.fetchData()
         
-        results.removeAll()
-        
         FakeService.getData { (error, results) in
             if let error = error {
                 self.errorDidOccured(error: error)
             }
             else if let resu = results {
+                self.results.removeAll()
+
                 self.didfetchData(resultCount: resu.count, haveMoreData: true)
                 self.results.append(contentsOf: resu)
             }
@@ -68,7 +65,7 @@ extension ViewController {
                 self.errorDidOccured(error: error)
             }
             else if let resu = results {
-                if self.results.count < 25 {
+                if self.results.count < 45 { // you probably get next page exist from service. 
                     self.didfetchData(resultCount: resu.count, haveMoreData: true)
                 }
                 else {

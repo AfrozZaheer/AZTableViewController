@@ -23,13 +23,16 @@ class AZTableViewController: UIViewController {
     @IBOutlet open var loadingView: UIView?
     @IBOutlet open var errorView: UIView?
 
+    
     var numberOfRows = 0
     open var haveMoreData = false
     open var isFetchingData = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        refresh.addTarget(self, action: #selector(fetchData), for: .valueChanged)
+        tableView?.addSubview(refresh)
     }
 
     override func didReceiveMemoryWarning() {
@@ -101,6 +104,8 @@ extension AZTableViewController {
 extension AZTableViewController {
     
     open func fetchData()  {
+        numberOfRows = 0
+        refresh.endRefreshing()
         hideNoResultsView()
         hideErrorView()
         hideNoResultsLoadingView()
@@ -129,11 +134,22 @@ extension AZTableViewController {
         hideErrorView()
     }
     
-    open func errorDidOccured(error: Error) {
+    open func errorDidOccured(error: Error?) {
+        isFetchingData = false
         hideNoResultsView()
         hideErrorView()
         hideNoResultsLoadingView()
-        showErrorView(error: error)
+        if numberOfRows > 0 {
+            let alert = UIAlertController(title: "Error!", message: error?.localizedDescription, preferredStyle: .alert)
+            let okayAction = UIAlertAction(title: "Okay", style: .default, handler: { (action) in
+                
+            })
+            alert.addAction(okayAction)
+            self.present(alert, animated: true, completion: nil)
+        }
+        else {
+            showErrorView(error: error)
+        }
     }
     
     
@@ -142,13 +158,13 @@ extension AZTableViewController {
         if nextPageLoaderCell != nil, haveMoreData {
         
             if let tableView = tableView, let section = section {
-                // check last section
+                // check if last section
                 if self.numberOfSections(in: tableView) != section + 1 {
                     return false
                 }
                 
                 if let row = row {
-                    // check last row
+                    // check if last row
                     if self.tableView(tableView, numberOfRowsInSection: section) != row + 1 {
                         return false
                     }
@@ -185,10 +201,11 @@ extension AZTableViewController {
 extension AZTableViewController {
     
     func showNoResultsView() {
-        
-        noResults?.isHidden = false
-        noResults?.frame = getFrame()
-        tableView?.addSubview(noResults!)
+        if noResults != nil{
+            noResults?.isHidden = false
+            noResults?.frame = getFrame()
+            tableView?.addSubview(noResults!)
+        }
     }
     func hideNoResultsView() {
         if noResults != nil{
@@ -197,13 +214,14 @@ extension AZTableViewController {
         }
     }
     func showNoResultsLoadingView() {
-        
-        loadingView?.isHidden = false
-        loadingView?.frame = getFrame()
-        tableView?.addSubview(loadingView!)
-        refresh.endRefreshing()
-        tableView?.isUserInteractionEnabled = false
-        
+        if loadingView != nil{
+
+            loadingView?.isHidden = false
+            loadingView?.frame = getFrame()
+            tableView?.addSubview(loadingView!)
+            refresh.endRefreshing()
+            tableView?.isUserInteractionEnabled = false
+        }
     }
     func hideNoResultsLoadingView() {
         if loadingView != nil{
@@ -215,11 +233,12 @@ extension AZTableViewController {
         }
     }
     func showErrorView(error: Error?) {
+        if errorView != nil{
 
-        errorView?.isHidden = false
-        errorView?.frame = getFrame()
-        tableView?.addSubview(errorView!)
-    
+            errorView?.isHidden = false
+            errorView?.frame = getFrame()
+            tableView?.addSubview(errorView!)
+        }
     }
     func hideErrorView() {
         if errorView != nil{
