@@ -54,6 +54,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="errorView" destination="4IG-hY-eA2" id="omG-XM-9qS"/>
+                        <outlet property="loadingView" destination="27D-Kr-dXQ" id="vMv-Mo-fMj"/>
+                        <outlet property="nextPageLoaderCell" destination="VuA-qX-dTU" id="4GA-2O-kjM"/>
+                        <outlet property="noResults" destination="lg3-4s-Kzg" id="2Pq-ys-krg"/>
                         <outlet property="tableView" destination="4M7-ED-dli" id="45Z-Hp-hEA"/>
                     </connections>
                 </viewController>
@@ -62,7 +66,7 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                     <autoresizingMask key="autoresizingMask"/>
                     <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VuA-qX-dTU" id="Ku9-3O-zXb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sN2-r8-MA0">

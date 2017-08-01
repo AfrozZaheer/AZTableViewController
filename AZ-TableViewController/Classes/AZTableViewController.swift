@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AZTableViewController: UIViewController {
+open class AZTableViewController: UIViewController {
 
     //MARK: - IBOutlets
     
@@ -28,16 +28,16 @@ class AZTableViewController: UIViewController {
     open var haveMoreData = false
     open var isFetchingData = false
 
-    override func viewDidLoad() {
+    override open func viewDidLoad() {
         super.viewDidLoad()
         
         refresh.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         tableView?.addSubview(refresh)
         
-        loadDefaultsViews()
+        loadDefaultsViews(bundle: nil)
     }
 
-    override func didReceiveMemoryWarning() {
+    override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
