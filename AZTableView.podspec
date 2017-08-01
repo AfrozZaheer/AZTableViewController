@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AZTableView"
-  s.version      = "0.0.1"
+  s.version      = "1.0.1"
   s.summary      = "Automatic pagination handling and loading views"
 
   s.description  = <<-DESC
