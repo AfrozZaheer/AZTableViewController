@@ -34,31 +34,51 @@ open class AZTableViewController: UIViewController {
         refresh.addTarget(self, action: #selector(fetchData), for: .valueChanged)
         tableView?.addSubview(refresh)
         
-        loadDefaultsViews(bundle: nil)
+        loadDefaultsViews()
     }
 
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
-    func loadDefaultsViews(bundle: Bundle? = Utility.getBundle())  {
+    fileprivate func loadDefaultsViews(bundle: Bundle? = Utility.getBundle()) {
+        
+        loadNextPageLoaderCell(nibName: "LoadingTableViewCell" , bundle: bundle)
+        loadErrorView(nibName: "ErrorView", bundle: bundle)
+        loadNoResultView(nibName: "NoResultView", bundle: bundle)
+        loadLoadingView(nibName: "LoadingView" , bundle: bundle)
+    }
+    
+    public func loadNextPageLoaderCell(nibName: String  ,bundle: Bundle? = Bundle.main) {
         
         if nextPageLoaderCell == nil {
-            let loaderCell = UINib(nibName: "LoadingTableViewCell", bundle: bundle)
+            let loaderCell = UINib(nibName: nibName, bundle: bundle)
             tableView?.register(loaderCell, forCellReuseIdentifier: "LoadingTableViewCell")
             nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: "LoadingTableViewCell")
         }
-        
-        if loadingView == nil {
-            loadingView = bundle?.loadNibNamed("LoadingView", owner: self, options: nil)?.first as? UIView
-        }
-        if noResults == nil {
-            noResults = bundle?.loadNibNamed("ErrorView", owner: self, options: nil)?.first as? UIView
-        }
+    }
+    
+    
+    public func loadErrorView(nibName: String ,bundle: Bundle? = Bundle.main) {
         if errorView == nil {
-            errorView = bundle?.loadNibNamed("NoResultView", owner: self, options: nil)?.first as? UIView
+            errorView = bundle?.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView
         }
     }
+    
+    
+    public func loadNoResultView(nibName: String ,bundle: Bundle? = Bundle.main) {
+        if noResults == nil {
+            noResults = bundle?.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView
+        }
+    }
+    
+    
+    public func loadLoadingView(nibName: String ,bundle: Bundle? = Bundle.main) {
+        if loadingView == nil {
+            loadingView = bundle?.loadNibNamed(nibName, owner: self, options: nil)?.first as? UIView
+        }
+    }
+    
     
 }
 
@@ -147,7 +167,9 @@ extension AZTableViewController {
             tableView?.reloadData()
         }
         else {
-            showNoResultsView()
+            if numberOfRows <= 0 {
+                showNoResultsView()
+            }
         }
     }
     
