@@ -27,7 +27,7 @@ open class AZTableViewController: UIViewController {
     var numberOfRows = 0
     open var haveMoreData = false
     open var isFetchingData = false
-
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         
