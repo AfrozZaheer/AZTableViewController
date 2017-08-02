@@ -1,0 +1,6 @@
+framework module AZTableView {
+  umbrella header "AZTableView-umbrella.h"
+
+  export *
+  module * { export * }
+}

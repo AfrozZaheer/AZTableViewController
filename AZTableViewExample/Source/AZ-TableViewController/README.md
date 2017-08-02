@@ -5,7 +5,7 @@
 
 [![Swift version](https://img.shields.io/badge/swift-3.0-orange.svg?style=flat.svg)](https://img.shields.io/badge/swift-3.0-orange.svg?style=flat.svg)
 [![Support Dependecy Manager](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
-[![Version](https://img.shields.io/badge/pod-v0.1.0-blue.svg)](https://cocoapods.org/pods/AZTableView)
+[![Version](https://img.shields.io/badge/pod%20-v0.0.1-blue.svg)](https://cocoapods.org/pods/AZTableView)
 [![License](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat.svg)](https://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat.svg)
 [![Platform](https://img.shields.io/badge/platform-ios-lightgrey.svg)](https://cocoapods.org/pods/AZTableView)
 
@@ -23,11 +23,6 @@
 * Automatic pagination handling 
 * No more awkward empty TableView
 * AZ TableView controller give you advantage to connect your (Loading, no result, error ) views via Interface builder
-
-## New in version 0.1.0
-
-* You can now add your custome xib as dummy views (loading, error, no result)
-* You can xib based next page loading cell
 
 ## Installation
 
@@ -70,11 +65,6 @@ class ViewController: AZTableViewController {
     var lastIndex = 0
     var results = [String]()
     override func viewDidLoad() {
-
-/*      self.loadLoadingView(nibName: "") // if bundle is nil
-        self.loadLoadingView(nibName: "", bundle: myBunlde) // if custom bundle */ 
-// if want to load views from .XIB files 
-
         super.viewDidLoad()
         self.fetchData()
     }
@@ -173,6 +163,8 @@ extension ViewController {
         }
     }
 }
+
+
 ```
 
 
