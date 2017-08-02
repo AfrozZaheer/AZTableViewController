@@ -24,7 +24,7 @@
 * No more awkward empty TableView
 * AZ TableView controller give you advantage to connect your (Loading, no result, error ) views via Interface builder
 
-## New in version 0.1.0
+## New in version 0.0.2
 
 * You can now add your custome xib as dummy views (loading, error, no result)
 * You can xib based next page loading cell
