@@ -24,6 +24,11 @@
 * No more awkward empty TableView
 * AZ TableView controller give you advantage to connect your (Loading, no result, error ) views via Interface builder
 
+## New in version 0.1.0
+
+* You can now add your custome xib as dummy views (loading, error, no result)
+* You can xib based next page loading cell
+
 ## Installation
 
 ### CocoaPods
@@ -65,6 +70,11 @@ class ViewController: AZTableViewController {
     var lastIndex = 0
     var results = [String]()
     override func viewDidLoad() {
+
+/*      self.loadLoadingView(nibName: "") // if bundle is nil
+        self.loadLoadingView(nibName: "", bundle: myBunlde) // if custom bundle */ 
+// if want to load views from .XIB files 
+
         super.viewDidLoad()
         self.fetchData()
     }
@@ -163,8 +173,6 @@ extension ViewController {
         }
     }
 }
-
-
 ```
 
 

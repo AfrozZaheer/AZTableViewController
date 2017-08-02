@@ -27,7 +27,7 @@ open class AZTableViewController: UIViewController {
     var numberOfRows = 0
     open var haveMoreData = false
     open var isFetchingData = false
-
+    
     override open func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,18 +43,18 @@ open class AZTableViewController: UIViewController {
     
     fileprivate func loadDefaultsViews(bundle: Bundle? = Utility.getBundle()) {
         
-        loadNextPageLoaderCell(nibName: "LoadingTableViewCell" , bundle: bundle)
+        loadNextPageLoaderCell(nibName: "LoadingTableViewCell", cellIdentifier: "LoadingTableViewCell" , bundle: bundle)
         loadErrorView(nibName: "ErrorView", bundle: bundle)
         loadNoResultView(nibName: "NoResultView", bundle: bundle)
         loadLoadingView(nibName: "LoadingView" , bundle: bundle)
     }
     
-    public func loadNextPageLoaderCell(nibName: String  ,bundle: Bundle? = Bundle.main) {
+    public func loadNextPageLoaderCell(nibName: String, cellIdentifier: String, bundle: Bundle? = Bundle.main) {
         
         if nextPageLoaderCell == nil {
             let loaderCell = UINib(nibName: nibName, bundle: bundle)
-            tableView?.register(loaderCell, forCellReuseIdentifier: "LoadingTableViewCell")
-            nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: "LoadingTableViewCell")
+            tableView?.register(loaderCell, forCellReuseIdentifier: nibName)
+            nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: cellIdentifier)
         }
     }
     

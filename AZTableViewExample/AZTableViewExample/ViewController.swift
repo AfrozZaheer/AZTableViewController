@@ -14,6 +14,7 @@ class ViewController: AZTableViewController {
     var lastIndex = 0
     var results = [String]()
     override func viewDidLoad() {
+
         super.viewDidLoad()
         self.fetchData()
         
