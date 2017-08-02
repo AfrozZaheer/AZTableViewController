@@ -71,10 +71,6 @@ class ViewController: AZTableViewController {
     var results = [String]()
     override func viewDidLoad() {
 
-/*      self.loadLoadingView(nibName: "") // if bundle is nil
-        self.loadLoadingView(nibName: "", bundle: myBunlde) // if custom bundle */ 
-// if want to load views from .XIB files 
-
         super.viewDidLoad()
         self.fetchData()
     }
@@ -88,9 +84,7 @@ class ViewController: AZTableViewController {
     }
 }
 
-
 ```
-
 
 #### Step 2
 
@@ -100,6 +94,29 @@ class ViewController: AZTableViewController {
 
 ![Alt text](http://i.imgur.com/Zi9RKJ2.png "AZTableView-step2")
 
+* To load views from custom .xib files 
+
+```swift 
+
+class ViewController: AZTableViewController {
+    override func viewDidLoad() {
+
+        self.loadLoadingView(nibName: "your nib name") // if bundle is nil
+        self.loadErrorView(nibName: "your nib name", bundle: yourBundle) // if custom bundle
+
+        super.viewDidLoad()
+        self.fetchData()
+    }
+}
+```
+* If your xibs are in main bundle than use 
+```swift 
+    self.loadLoadingView(nibName: "your nib name") // if bundle is nil
+```
+Else use 
+```swift 
+    self.loadLoadingView(nibName: "your nib name", bundle: yourBundle)
+```
 
 #### Step 3 
 
