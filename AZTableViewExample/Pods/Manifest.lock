@@ -1,0 +1,16 @@
+PODS:
+  - AZTableView (0.1.0)
+
+DEPENDENCIES:
+  - AZTableView (from `../AZTableViewExample/Source/AZ-TableViewController`)
+
+EXTERNAL SOURCES:
+  AZTableView:
+    :path: "../AZTableViewExample/Source/AZ-TableViewController"
+
+SPEC CHECKSUMS:
+  AZTableView: 9271fcaac7cf5957e447befb02213f49169b7a0f
+
+PODFILE CHECKSUM: 372c2428f7a1ef28db1d266840ca079813e2d1fb
+
+COCOAPODS: 1.2.1

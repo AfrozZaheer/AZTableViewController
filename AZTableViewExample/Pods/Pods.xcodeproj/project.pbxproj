@@ -1,0 +1,751 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06B9A3AEF1D61C02CDC1DBF1E7764BDA /* AZTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCEA8FBC249E1E4A0ED4972BBE2FDD8B /* AZTableViewController.swift */; };
+		1DF6031B1EBC457ECB236DEBD4364DA3 /* AZTableViewElements.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4AF859383FA8CDE3A76B082CE908D51E /* AZTableViewElements.bundle */; };
+		2637E261C1465A4820F98C31A37F60F6 /* Pods-AZTableViewExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1905FCDB540EB224D3A02AA4312BEF33 /* Pods-AZTableViewExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		418ABD0FB0AF145E8119A9B76DC044BE /* NoResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C04FFF338250C31F938A2FB0A50254C0 /* NoResultView.xib */; };
+		54EC1CF620BB032C1B19C7C64B30463E /* Pods-AZTableViewExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 918DF4BBEE46B0A3B75BF669D694A36C /* Pods-AZTableViewExample-dummy.m */; };
+		5CD036ED76720DF35BA34772954EBDA6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		67F59433946999C55F017E43B3A76723 /* AZTableView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03B89579814ABD5AFD97585721E50564 /* AZTableView-dummy.m */; };
+		834C625149FB02DAAE75AF3A56A4E44F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		88064A6C7B1433EC5C6480F7E809458E /* LoadingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 24AFCFD6454CF7A53C95E58313832D7C /* LoadingView.xib */; };
+		A1BB442137F64CAA5EC6391E698393C0 /* AZTableView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = FE7DF03EBF662FA233834B9C40457E17 /* AZTableView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5973C146EE687B4E6AF4FF5BDB892D9 /* ErrorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D2610B4A7C59DBEA3975E9150DC3BC0 /* ErrorView.xib */; };
+		BA21EB96ED83159146A705FC41306264 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4C07BBBABE20E8D963D96927C5D29FF /* Utility.swift */; };
+		C02C5F46C76A26AE4A010B3A85B17DD3 /* LoadingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7969BF4984B82225A9833B4DF867ABB6 /* LoadingTableViewCell.xib */; };
+		F60A52A47DE31C35A4112C90F97D27CC /* LoadingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A62587969A3CF697B8CB8512CEB7913 /* LoadingTableViewCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		82A3A9140D3E95919438CF9DE0AF425A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 88E1D62665852109EDAADCBE7EE83D75;
+			remoteInfo = AZTableView;
+		};
+		F808D67B857A5F9CDF0106266C3BF376 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F6F94C059BEEA2237979DD4E1F6BCEF0;
+			remoteInfo = "AZTableView-AZTableViewElements";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		03B89579814ABD5AFD97585721E50564 /* AZTableView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AZTableView-dummy.m"; sourceTree = "<group>"; };
+		0981700AF7AB93873555113F156BD111 /* Pods-AZTableViewExample-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZTableViewExample-resources.sh"; sourceTree = "<group>"; };
+		1283AAFECB5DF3A5C699ADE2ED1FAF73 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1905FCDB540EB224D3A02AA4312BEF33 /* Pods-AZTableViewExample-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AZTableViewExample-umbrella.h"; sourceTree = "<group>"; };
+		24AFCFD6454CF7A53C95E58313832D7C /* LoadingView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoadingView.xib; sourceTree = "<group>"; };
+		24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AZTableView.xcconfig; sourceTree = "<group>"; };
+		2E7E3CE5340A9130B4C554C8E8787302 /* Pods-AZTableViewExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AZTableViewExample.release.xcconfig"; sourceTree = "<group>"; };
+		3059916BB497C1A100511BC6294990D3 /* Pods-AZTableViewExample.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-AZTableViewExample.modulemap"; sourceTree = "<group>"; };
+		3359C848C873F83F4224A5691C16FBCA /* AZTableView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = AZTableView.framework; path = AZTableView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF859383FA8CDE3A76B082CE908D51E /* AZTableViewElements.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = AZTableViewElements.bundle; path = AZTableViewElements.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2610B4A7C59DBEA3975E9150DC3BC0 /* ErrorView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = ErrorView.xib; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		7969BF4984B82225A9833B4DF867ABB6 /* LoadingTableViewCell.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LoadingTableViewCell.xib; sourceTree = "<group>"; };
+		7A62587969A3CF697B8CB8512CEB7913 /* LoadingTableViewCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = LoadingTableViewCell.swift; sourceTree = "<group>"; };
+		918DF4BBEE46B0A3B75BF669D694A36C /* Pods-AZTableViewExample-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AZTableViewExample-dummy.m"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		B4C07BBBABE20E8D963D96927C5D29FF /* Utility.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		BCAAB5D06E374547B01B323B36F22459 /* Pods-AZTableViewExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AZTableViewExample-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C04FFF338250C31F938A2FB0A50254C0 /* NoResultView.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = NoResultView.xib; sourceTree = "<group>"; };
+		D637B3BFFD82BC79491ABA65D60B27EA /* AZTableView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = AZTableView.modulemap; sourceTree = "<group>"; };
+		DCEA8FBC249E1E4A0ED4972BBE2FDD8B /* AZTableViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AZTableViewController.swift; sourceTree = "<group>"; };
+		DF2238CD02F9FCB2396D10208164695D /* Pods-AZTableViewExample-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AZTableViewExample-frameworks.sh"; sourceTree = "<group>"; };
+		E10194AA5B7C620ACA75E128A676C7DA /* Pods-AZTableViewExample-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AZTableViewExample-acknowledgements.plist"; sourceTree = "<group>"; };
+		E4AFC96F77528E62709A651971F1D69E /* Pods-AZTableViewExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AZTableViewExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E6942A3D9A56EC85669F413B29888699 /* AZTableView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZTableView-prefix.pch"; sourceTree = "<group>"; };
+		EF6DC7C987B9692B730B7B5C43B4F485 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F26BD6EC7F008F3AFEDDBE6964AE1FF4 /* Pods_AZTableViewExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_AZTableViewExample.framework; path = "Pods-AZTableViewExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7367089A4004ECB04C34901AC456B5A /* ResourceBundle-AZTableViewElements-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-AZTableViewElements-Info.plist"; sourceTree = "<group>"; };
+		FE7DF03EBF662FA233834B9C40457E17 /* AZTableView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AZTableView-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C3CC958560E5B704432C41507A6356DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E41BD41BDEAFA6DA928FE0E3615C935E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				834C625149FB02DAAE75AF3A56A4E44F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EED132A585E7229064AC31048FE78E90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CD036ED76720DF35BA34772954EBDA6 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0C09B618D2617B62D8B80B94EBA16E37 /* Loading&ErrorViews */ = {
+			isa = PBXGroup;
+			children = (
+				7A62587969A3CF697B8CB8512CEB7913 /* LoadingTableViewCell.swift */,
+			);
+			name = "Loading&ErrorViews";
+			path = "Loading&ErrorViews";
+			sourceTree = "<group>";
+		};
+		16422D6D4CA2CBB6411FAC69462EF34A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1A1831BBDC6D069D17EBD8B016F47CC7 /* AZ-TableViewController */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		1A1831BBDC6D069D17EBD8B016F47CC7 /* AZ-TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5A06475DB066975B18F5995755E1F7C4 /* Classes */,
+			);
+			name = "AZ-TableViewController";
+			path = "AZ-TableViewController";
+			sourceTree = "<group>";
+		};
+		2D97C6FFABE8DE136FBAA75A00E7B5AE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				DCEA8FBC249E1E4A0ED4972BBE2FDD8B /* AZTableViewController.swift */,
+				B4C07BBBABE20E8D963D96927C5D29FF /* Utility.swift */,
+				0C09B618D2617B62D8B80B94EBA16E37 /* Loading&ErrorViews */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		4B92874E48978A839C61776D49A3436A /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D637B3BFFD82BC79491ABA65D60B27EA /* AZTableView.modulemap */,
+				24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */,
+				03B89579814ABD5AFD97585721E50564 /* AZTableView-dummy.m */,
+				E6942A3D9A56EC85669F413B29888699 /* AZTableView-prefix.pch */,
+				FE7DF03EBF662FA233834B9C40457E17 /* AZTableView-umbrella.h */,
+				1283AAFECB5DF3A5C699ADE2ED1FAF73 /* Info.plist */,
+				F7367089A4004ECB04C34901AC456B5A /* ResourceBundle-AZTableViewElements-Info.plist */,
+			);
+			name = "Support Files";
+			path = "../../Pods/Target Support Files/AZTableView";
+			sourceTree = "<group>";
+		};
+		5A06475DB066975B18F5995755E1F7C4 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B6678F0C8F0DC69CFA769D753FF2652B /* Loading&ErrorViews */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		753C091A62CC30025F1172F1AADB1D13 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3359C848C873F83F4224A5691C16FBCA /* AZTableView.framework */,
+				4AF859383FA8CDE3A76B082CE908D51E /* AZTableViewElements.bundle */,
+				F26BD6EC7F008F3AFEDDBE6964AE1FF4 /* Pods_AZTableViewExample.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BCBE12ABFB29B123E0C90A687A062D85 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				753C091A62CC30025F1172F1AADB1D13 /* Products */,
+				BAD1F54F1B967DC33C05FB0E9393C6AC /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		8079DA41F5652DF5CFD407B73727A99B /* Pods-AZTableViewExample */ = {
+			isa = PBXGroup;
+			children = (
+				EF6DC7C987B9692B730B7B5C43B4F485 /* Info.plist */,
+				3059916BB497C1A100511BC6294990D3 /* Pods-AZTableViewExample.modulemap */,
+				BCAAB5D06E374547B01B323B36F22459 /* Pods-AZTableViewExample-acknowledgements.markdown */,
+				E10194AA5B7C620ACA75E128A676C7DA /* Pods-AZTableViewExample-acknowledgements.plist */,
+				918DF4BBEE46B0A3B75BF669D694A36C /* Pods-AZTableViewExample-dummy.m */,
+				DF2238CD02F9FCB2396D10208164695D /* Pods-AZTableViewExample-frameworks.sh */,
+				0981700AF7AB93873555113F156BD111 /* Pods-AZTableViewExample-resources.sh */,
+				1905FCDB540EB224D3A02AA4312BEF33 /* Pods-AZTableViewExample-umbrella.h */,
+				E4AFC96F77528E62709A651971F1D69E /* Pods-AZTableViewExample.debug.xcconfig */,
+				2E7E3CE5340A9130B4C554C8E8787302 /* Pods-AZTableViewExample.release.xcconfig */,
+			);
+			name = "Pods-AZTableViewExample";
+			path = "Target Support Files/Pods-AZTableViewExample";
+			sourceTree = "<group>";
+		};
+		83CF22F6B8DCA515E2025D87A7C73BBC /* AZTableView */ = {
+			isa = PBXGroup;
+			children = (
+				8F9EFB7D989E2D4F1FEC5E69898EE766 /* AZ-TableViewController */,
+				16422D6D4CA2CBB6411FAC69462EF34A /* Resources */,
+				4B92874E48978A839C61776D49A3436A /* Support Files */,
+			);
+			name = AZTableView;
+			path = "../Source/AZ-TableViewController";
+			sourceTree = "<group>";
+		};
+		8F9EFB7D989E2D4F1FEC5E69898EE766 /* AZ-TableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2D97C6FFABE8DE136FBAA75A00E7B5AE /* Classes */,
+			);
+			name = "AZ-TableViewController";
+			path = "AZ-TableViewController";
+			sourceTree = "<group>";
+		};
+		B6678F0C8F0DC69CFA769D753FF2652B /* Loading&ErrorViews */ = {
+			isa = PBXGroup;
+			children = (
+				5D2610B4A7C59DBEA3975E9150DC3BC0 /* ErrorView.xib */,
+				7969BF4984B82225A9833B4DF867ABB6 /* LoadingTableViewCell.xib */,
+				24AFCFD6454CF7A53C95E58313832D7C /* LoadingView.xib */,
+				C04FFF338250C31F938A2FB0A50254C0 /* NoResultView.xib */,
+			);
+			name = "Loading&ErrorViews";
+			path = "Loading&ErrorViews";
+			sourceTree = "<group>";
+		};
+		BAD1F54F1B967DC33C05FB0E9393C6AC /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8079DA41F5652DF5CFD407B73727A99B /* Pods-AZTableViewExample */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BCBE12ABFB29B123E0C90A687A062D85 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				83CF22F6B8DCA515E2025D87A7C73BBC /* AZTableView */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C9267D668496E4CF8F4FD862CC8DC73C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2637E261C1465A4820F98C31A37F60F6 /* Pods-AZTableViewExample-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA979E05784D6F863488037AAC9AB593 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A1BB442137F64CAA5EC6391E698393C0 /* AZTableView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		561AB7EC52762398FFB125DA732D2CAF /* Pods-AZTableViewExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2A64521F89CE5240B202867F48610006 /* Build configuration list for PBXNativeTarget "Pods-AZTableViewExample" */;
+			buildPhases = (
+				B47B552E274D4BED46672E4BB08C4C90 /* Sources */,
+				EED132A585E7229064AC31048FE78E90 /* Frameworks */,
+				C9267D668496E4CF8F4FD862CC8DC73C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4223BAE1BA7C66B648EF71997820D8D8 /* PBXTargetDependency */,
+			);
+			name = "Pods-AZTableViewExample";
+			productName = "Pods-AZTableViewExample";
+			productReference = F26BD6EC7F008F3AFEDDBE6964AE1FF4 /* Pods_AZTableViewExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		88E1D62665852109EDAADCBE7EE83D75 /* AZTableView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC63B10E036062E6E0702D3F0581286C /* Build configuration list for PBXNativeTarget "AZTableView" */;
+			buildPhases = (
+				EF5346DB21A05504DACE04CE8D200749 /* Sources */,
+				E41BD41BDEAFA6DA928FE0E3615C935E /* Frameworks */,
+				4BB3BEED92C231828641F41FFF5BB0EA /* Resources */,
+				CA979E05784D6F863488037AAC9AB593 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C0136B92749E15B16E976CD0579E2D90 /* PBXTargetDependency */,
+			);
+			name = AZTableView;
+			productName = AZTableView;
+			productReference = 3359C848C873F83F4224A5691C16FBCA /* AZTableView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F6F94C059BEEA2237979DD4E1F6BCEF0 /* AZTableView-AZTableViewElements */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 67ABAE6338E214CC17D6C3975FC98125 /* Build configuration list for PBXNativeTarget "AZTableView-AZTableViewElements" */;
+			buildPhases = (
+				29C3F06B70739F16C35A13DC7EE929D1 /* Sources */,
+				C3CC958560E5B704432C41507A6356DE /* Frameworks */,
+				F13CAA4CDAD838E2A21F89D8C3C8717A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AZTableView-AZTableViewElements";
+			productName = "AZTableView-AZTableViewElements";
+			productReference = 4AF859383FA8CDE3A76B082CE908D51E /* AZTableViewElements.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 753C091A62CC30025F1172F1AADB1D13 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				88E1D62665852109EDAADCBE7EE83D75 /* AZTableView */,
+				F6F94C059BEEA2237979DD4E1F6BCEF0 /* AZTableView-AZTableViewElements */,
+				561AB7EC52762398FFB125DA732D2CAF /* Pods-AZTableViewExample */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4BB3BEED92C231828641F41FFF5BB0EA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1DF6031B1EBC457ECB236DEBD4364DA3 /* AZTableViewElements.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F13CAA4CDAD838E2A21F89D8C3C8717A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A5973C146EE687B4E6AF4FF5BDB892D9 /* ErrorView.xib in Resources */,
+				C02C5F46C76A26AE4A010B3A85B17DD3 /* LoadingTableViewCell.xib in Resources */,
+				88064A6C7B1433EC5C6480F7E809458E /* LoadingView.xib in Resources */,
+				418ABD0FB0AF145E8119A9B76DC044BE /* NoResultView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		29C3F06B70739F16C35A13DC7EE929D1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B47B552E274D4BED46672E4BB08C4C90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54EC1CF620BB032C1B19C7C64B30463E /* Pods-AZTableViewExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EF5346DB21A05504DACE04CE8D200749 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67F59433946999C55F017E43B3A76723 /* AZTableView-dummy.m in Sources */,
+				06B9A3AEF1D61C02CDC1DBF1E7764BDA /* AZTableViewController.swift in Sources */,
+				F60A52A47DE31C35A4112C90F97D27CC /* LoadingTableViewCell.swift in Sources */,
+				BA21EB96ED83159146A705FC41306264 /* Utility.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4223BAE1BA7C66B648EF71997820D8D8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AZTableView;
+			target = 88E1D62665852109EDAADCBE7EE83D75 /* AZTableView */;
+			targetProxy = 82A3A9140D3E95919438CF9DE0AF425A /* PBXContainerItemProxy */;
+		};
+		C0136B92749E15B16E976CD0579E2D90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AZTableView-AZTableViewElements";
+			target = F6F94C059BEEA2237979DD4E1F6BCEF0 /* AZTableView-AZTableViewElements */;
+			targetProxy = F808D67B857A5F9CDF0106266C3BF376 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		0387CBFB9CD952239BAAED752F5C7327 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AZTableView/AZTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZTableView/AZTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = AZTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		163D87BE96A63549B0EACF1CC31A2E90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		26D33C09ECBE8122A22B84B9CF79D9FE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E7E3CE5340A9130B4C554C8E8787302 /* Pods-AZTableViewExample.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AZTableViewExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AZTableViewExample/Pods-AZTableViewExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AZTableViewExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		3956D3F9BEDD42169E0E83F89969D12D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AZTableView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/AZTableView/ResourceBundle-AZTableViewElements-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = AZTableViewElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		43006B1DA5B86C99C9E7824C0C78A0A3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/AZTableView/AZTableView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AZTableView/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/AZTableView/AZTableView.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = AZTableView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4DBD76E863A7AED9C6A8CB095FCD9C85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 24F4562C13D2739E6D82B94F65F173B9 /* AZTableView.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/AZTableView";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/AZTableView/ResourceBundle-AZTableViewElements-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = AZTableViewElements;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		707B86CFB21B645E37109F39754D4051 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		847EDB174F2A8C8BE6111FB01927CE92 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AFC96F77528E62709A651971F1D69E /* Pods-AZTableViewExample.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-AZTableViewExample/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AZTableViewExample/Pods-AZTableViewExample.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_AZTableViewExample;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2A64521F89CE5240B202867F48610006 /* Build configuration list for PBXNativeTarget "Pods-AZTableViewExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				847EDB174F2A8C8BE6111FB01927CE92 /* Debug */,
+				26D33C09ECBE8122A22B84B9CF79D9FE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				163D87BE96A63549B0EACF1CC31A2E90 /* Debug */,
+				707B86CFB21B645E37109F39754D4051 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		67ABAE6338E214CC17D6C3975FC98125 /* Build configuration list for PBXNativeTarget "AZTableView-AZTableViewElements" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4DBD76E863A7AED9C6A8CB095FCD9C85 /* Debug */,
+				3956D3F9BEDD42169E0E83F89969D12D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC63B10E036062E6E0702D3F0581286C /* Build configuration list for PBXNativeTarget "AZTableView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				43006B1DA5B86C99C9E7824C0C78A0A3 /* Debug */,
+				0387CBFB9CD952239BAAED752F5C7327 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
