@@ -21,13 +21,13 @@
 ## Features
 
 * Automatic pagination handling 
-* No more awkward empty TableView
+* No more awkward empty TableView screen
 * AZ TableView controller give you advantage to connect your (Loading, no result, error ) views via Interface builder
 
 ## New in version 0.0.2
 
-* You can now add your custome xib as dummy views (loading, error, no result)
-* You can xib based next page loading cell
+* You can now add your custom xib as dummy views (loading, error, no result)
+* You can add xib based next page loading cell also
 
 ## Installation
 
@@ -62,7 +62,7 @@ $ pod install
 
 #### Step 1
 
-* Extend you view controller from AZTableVIewController 
+* Extend your view controller from AZTableVIewController 
 ```swift 
 
 class ViewController: AZTableViewController {
@@ -88,7 +88,7 @@ class ViewController: AZTableViewController {
 
 #### Step 2
 
-* Set the next page loder cell outlet as given below,
+* Set the next page loading cell outlet as given below,
 
 ![Alt text](http://i.imgur.com/SWYNa2W.png "AZTableView-step2")
 
@@ -120,7 +120,7 @@ Else use
 
 #### Step 3 
 
-* Confirm you controller to UITableViewDelegate and UITableViewDataSource
+* Confirm your controller to UITableViewDelegate and UITableViewDataSource
 
 * And override AZtabeView cellForRow function. 
 
@@ -146,7 +146,7 @@ extension ViewController : UITableViewDataSource, UITableViewDelegate {
 ```
 #### Step 4
 
-* Override two more functions of fetchData and fetchNextData functions  
+* Override two more functions "fetchData" and "fetchNextData" 
 
 ```swift 
 //MARK: - API Call
@@ -190,8 +190,11 @@ extension ViewController {
         }
     }
 }
+
 ```
 
+#### Done
+Thats it, you successfully integrate AZTableViewController 
 
 
 ## License
