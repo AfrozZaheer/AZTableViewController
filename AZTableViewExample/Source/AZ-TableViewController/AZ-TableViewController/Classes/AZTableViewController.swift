@@ -145,7 +145,7 @@ extension AZTableViewController {
 //MARK: - For Api's
 extension AZTableViewController {
     
-    open func fetchData()  {
+    @objc open func fetchData()  {
         numberOfRows = 0
         refresh.endRefreshing()
         hideNoResultsView()
