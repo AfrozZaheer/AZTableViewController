@@ -3,7 +3,7 @@ Pod::Spec.new do |s|
 
 
   s.name         = "AZTableView"
-  s.version      = "0.0.2"
+  s.version      = "0.0.3"
   s.summary      = "Automatic pagination handling and loading views"
 
   s.description  = <<-DESC
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.homepage     = "https://github.com/AfrozZaheer/AZTableView"
 
-  s.platform         = :ios, "8.0"
+  s.platform         = :ios, "9.0"
   s.license      = { :type => 'MIT', :file => 'LICENSE' }
 
 

@@ -9,20 +9,20 @@
 import UIKit
 
 open class AZTableViewController: UIViewController {
-
+    
     //MARK: - IBOutlets
     
     @IBOutlet open var tableView: UITableView?
     @IBOutlet open var nextPageLoaderCell: UITableViewCell?
-
     
-    //MARK: - Properties 
+    
+    //MARK: - Properties
     
     let refresh: UIRefreshControl = UIRefreshControl()
     @IBOutlet open var noResults: UIView?
     @IBOutlet open var loadingView: UIView?
     @IBOutlet open var errorView: UIView?
-
+    
     
     var numberOfRows = 0
     open var haveMoreData = false
@@ -36,25 +36,25 @@ open class AZTableViewController: UIViewController {
         
         loadDefaultsViews()
     }
-
+    
     override open func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
     
     fileprivate func loadDefaultsViews(bundle: Bundle? = Utility.getBundle()) {
         
-        loadNextPageLoaderCell(nibName: "LoadingTableViewCell", cellIdentifier: "LoadingTableViewCell" , bundle: bundle)
+        loadNextPageLoaderCell(nibName: "LoadingTableViewCell" , bundle: bundle)
         loadErrorView(nibName: "ErrorView", bundle: bundle)
         loadNoResultView(nibName: "NoResultView", bundle: bundle)
         loadLoadingView(nibName: "LoadingView" , bundle: bundle)
     }
     
-    public func loadNextPageLoaderCell(nibName: String, cellIdentifier: String, bundle: Bundle? = Bundle.main) {
+    public func loadNextPageLoaderCell(nibName: String  ,bundle: Bundle? = Bundle.main) {
         
         if nextPageLoaderCell == nil {
             let loaderCell = UINib(nibName: nibName, bundle: bundle)
-            tableView?.register(loaderCell, forCellReuseIdentifier: nibName)
-            nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: cellIdentifier)
+            tableView?.register(loaderCell, forCellReuseIdentifier: "LoadingTableViewCell")
+            nextPageLoaderCell =  tableView?.dequeueReusableCell(withIdentifier: "LoadingTableViewCell")
         }
     }
     
@@ -103,7 +103,7 @@ extension AZTableViewController {
         return AZtableView(tableView, numberOfRowsInSection: section)
     }
     
-    open func AZtableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    @objc open func AZtableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return numberOfRows
     }
     
@@ -116,7 +116,7 @@ extension AZTableViewController {
         return AZtableView(tableView, heightForRowAt: indexPath)
     }
     
-    open func AZtableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    @objc open func AZtableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
@@ -136,7 +136,7 @@ extension AZTableViewController {
         return AZtableView(tableView, cellForRowAt: indexPath)
     }
     
-    open func AZtableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    @objc open func AZtableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
@@ -173,7 +173,7 @@ extension AZTableViewController {
         }
     }
     
-    open func fetchNextData () {
+    @objc open func fetchNextData () {
         isFetchingData = true
         hideErrorView()
     }
@@ -198,9 +198,9 @@ extension AZTableViewController {
     
     
     open func showNextPageLoaderCell (tableView: UITableView? = nil, section: Int? = nil, row: Int? = nil) -> Bool {
-       
-        if nextPageLoaderCell != nil, haveMoreData {
         
+        if nextPageLoaderCell != nil, haveMoreData {
+            
             if let tableView = tableView, let section = section {
                 // check if last section
                 if self.numberOfSections(in: tableView) != section + 1 {
@@ -259,7 +259,7 @@ extension AZTableViewController {
     }
     func showNoResultsLoadingView() {
         if loadingView != nil{
-
+            
             loadingView?.isHidden = false
             loadingView?.frame = getFrame()
             tableView?.addSubview(loadingView!)
@@ -273,12 +273,12 @@ extension AZTableViewController {
             tableView?.willRemoveSubview(loadingView!)
             loadingView?.removeFromSuperview()
             tableView?.isUserInteractionEnabled = true
-    
+            
         }
     }
     func showErrorView(error: Error?) {
         if errorView != nil{
-
+            
             errorView?.isHidden = false
             errorView?.frame = getFrame()
             tableView?.addSubview(errorView!)
@@ -294,3 +294,4 @@ extension AZTableViewController {
         return CGRect(x: 0, y: 0, width: (tableView?.frame.size.width)!, height: (tableView?.frame.size.height)!)
     }
 }
+

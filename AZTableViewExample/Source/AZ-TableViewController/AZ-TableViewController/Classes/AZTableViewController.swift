@@ -103,7 +103,7 @@ extension AZTableViewController {
         return AZtableView(tableView, numberOfRowsInSection: section)
     }
     
-    open func AZtableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    @objc open func AZtableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return numberOfRows
     }
     
@@ -116,7 +116,7 @@ extension AZTableViewController {
         return AZtableView(tableView, heightForRowAt: indexPath)
     }
     
-    open func AZtableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    @objc open func AZtableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return UITableViewAutomaticDimension
     }
     
@@ -136,7 +136,7 @@ extension AZTableViewController {
         return AZtableView(tableView, cellForRowAt: indexPath)
     }
     
-    open func AZtableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    @objc open func AZtableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         return UITableViewCell()
     }
 }
@@ -173,7 +173,7 @@ extension AZTableViewController {
         }
     }
     
-    open func fetchNextData () {
+    @objc open func fetchNextData () {
         isFetchingData = true
         hideErrorView()
     }
