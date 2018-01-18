@@ -3,6 +3,7 @@
 
 ![Alt text](http://i.imgur.com/qUV86bJ.png "AZ-TableViewImage")
 
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 [![Swift version](https://img.shields.io/badge/swift-3.0-orange.svg?style=flat.svg)](https://img.shields.io/badge/swift-3.0-orange.svg?style=flat.svg)
 [![Support Dependecy Manager](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)](https://img.shields.io/badge/support-CocoaPods-red.svg?style=flat.svg)
 [![Version](https://img.shields.io/cocoapods/v/AZTableView.svg?style=flat)](https://cocoapods.org/pods/AZTableView)
